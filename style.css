@@ -258,18 +258,21 @@ header {
   align-items: center;
   justify-content: center;
   transition: all 0.2s ease-out;
+  will-change: transform;
 }
 
 /* CV button : style */
 .CV_button {
   background-color: rgb(187, 240, 196, 1);
   color: black;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 /* CV button : hover */
 .CV_button:hover {
-  filter: brightness(120%);
-  color: black;
+  transform: translateY(-5px);
 }
 
 /* CV button : icon */
