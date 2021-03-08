@@ -1,0 +1,366 @@
+/* ###########################################*/
+/* CSS RESET*/
+/* ###########################################*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ###########################################*/
+/* CSS CONTENT*/
+/* ###########################################*/
+
+html {
+  box-sizing: border-box;
+  line-height: 1.3;
+  font-family: "Raleway", sans-serif;
+}
+
+/* Body */
+body {
+  background: #0c121d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Prénom et nom */
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+/* Poste actuel */
+h5 {
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+em {
+  color: #c4f2cd;
+  font-style: normal;
+  font-weight: 800;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  color: white;
+}
+
+.navIcon {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.navButtons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+/* Bloc de présentation */
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 30px;
+  text-align: center;
+  color: white;
+  max-width: 100%;
+  padding: 30px;
+}
+
+.id {
+  max-width: 450px;
+}
+
+.description {
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Photo personnelle */
+.box-img {
+  border-radius: 50%;
+  width: 40%;
+  margin-bottom: 25px;
+  animation-name: animationperso;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+/* BUTTONS */
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.button {
+  display: block;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 50px;
+  padding: 5% 5%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.2s ease-out;
+}
+
+/* CV button : style */
+.CV_button {
+  background-color: rgb(187, 240, 196, 1);
+  color: black;
+  width: 60%;
+}
+
+/* CV button : hover */
+.CV_button:hover {
+  filter: brightness(120%);
+  color: black;
+}
+
+/* CV button : icon */
+.icon-download {
+  margin-right: 1%;
+}
+
+/* Blog button : style */
+.blog_button {
+  background-color: rgb(127, 129, 143, 0.3);
+  color: white;
+  display: none;
+}
+
+/* Blog button : hover */
+.blog_button:hover {
+  background-color: rgb(127, 129, 143, 0.6);
+  color: white;
+}
+
+.socialWrapper {
+  margin-bottom: 25px;
+}
+
+/* Bouton Twitter : style */
+.social {
+  border-radius: 50%;
+  width: 40px;
+  transition: transform 0.2s;
+}
+
+/* Bouton Twitter : hover */
+.social:hover {
+  transform: rotate(-15deg);
+  filter: brightness(80%);
+}
+
+/* Alignement des réseaux sociaux */
+.box li {
+  display: inline-block;
+  margin: 0% 3%;
+  list-style: none;
+}
+
+/* Liens vers les réseaux sociaux */
+.box li a {
+  border-radius: 50%;
+  width: 50px;
+  text-decoration: none;
+  font-size: 3px;
+  transition: all ease-in-out 250ms;
+}
+
+/* Hover des réseaux sociaux*/
+.box li a:hover {
+  color: #b9b9b9;
+}
+
+.footer {
+  display: none;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  margin: auto;
+  color: white;
+  text-align: center;
+  font-size: 70%;
+}
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: center;
+}
+
+.blog H1 {
+  color: white;
+}
+
+.blog H2 {
+  color: white;
+}
+
+/* ANIMATIONS */
+
+/* Photo personnelle animation code */
+@keyframes animationperso {
+  from {
+    transform: rotate(-8deg);
+  }
+  to {
+    transform: rotate(8deg);
+  }
+}
