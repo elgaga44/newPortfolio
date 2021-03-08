@@ -245,17 +245,18 @@ header {
 }
 
 .button {
-  display: block;
-  border: none;
-  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  min-height: 50px;
+  min-width: 100px;
   border-radius: 50px;
-  padding: 5% 5%;
-  text-align: center;
-  text-decoration: none;
+  padding: 0px 25px;
   font-size: 14px;
   font-weight: 600;
+  white-space: nowrap;
   cursor: pointer;
-  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: all 0.2s ease-out;
 }
 
@@ -263,7 +264,6 @@ header {
 .CV_button {
   background-color: rgb(187, 240, 196, 1);
   color: black;
-  width: 60%;
 }
 
 /* CV button : hover */
@@ -274,7 +274,7 @@ header {
 
 /* CV button : icon */
 .icon-download {
-  margin-right: 1%;
+  margin-right: 5px;
 }
 
 /* Blog button : style */
