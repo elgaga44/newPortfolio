@@ -216,7 +216,7 @@ header {
 }
 
 .description {
-  max-width: 450px;
+  width: 450px;
   display: flex;
   flex-direction: column;
   align-items: center;
