@@ -1,255 +1,149 @@
-/* ###########################################*/
-/* CSS RESET*/
-/* ###########################################*/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+/* CSS RESET */
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 
-/* ###########################################*/
+/* ##################*/
 /* CSS CONTENT*/
-/* ###########################################*/
+/* ##################*/
 
 html {
   box-sizing: border-box;
-  line-height: 1.3;
-  font-family: "Raleway", sans-serif;
+  font-size: 62.5%;
+  line-height: 1.2;
+  font-family: "Poppins", sans-serif;
+  min-height: 100%;
+  min-width: 100%;
+  margin-bottom: 2.5rem;
+  color: black;
 }
 
-/* Body */
 body {
-  background: #0c121d;
+  width: 100%;
+  height: 100%;
+  background: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 1.6rem;
+  color: #313f4d;
 }
 
-/* Prénom et nom */
 h1 {
-  font-size: 40px;
+  font-size: 3.5rem;
   font-weight: 700;
-  margin-bottom: 25px;
+  margin-bottom: 2.5rem;
 }
 
-/* Poste actuel */
-h5 {
-  font-size: 30px;
-  letter-spacing: 2px;
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+
+h3 {
+  font-size: 2.5rem;
   font-weight: 500;
-  margin-bottom: 25px;
+  margin-bottom: 2.5rem;
+}
+
+h4 {
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 em {
-  color: #c4f2cd;
+  color: #4d3ff6;
+  font-weight: 500;
   font-style: normal;
-  font-weight: 800;
 }
 
 p {
-  font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  font-size: 16px;
-  margin-bottom: 25px;
+  color: #425466ba;
 }
 
 a {
   text-decoration: none;
-  color: white;
+  color: inherit;
+  font-weight: 500;
 }
 
 header {
-  width: 80%;
+  width: 95%;
+  max-width: 130rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
-  color: white;
+  padding: 2em;
 }
 
-.navIcon {
-  font-weight: 700;
-  font-size: 24px;
-}
-
-.navButtons {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
-}
-
-/* Bloc de présentation */
-.box {
+main {
+  width: 95%;
+  max-width: 130rem;
+  padding: 2.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  border-radius: 30px;
   text-align: center;
-  color: white;
-  max-width: 100%;
-  padding: 30px;
 }
 
-.id {
-  max-width: 450px;
+.navIcon {
+  font-weight: 700;
+  font-size: 2.5rem;
 }
 
-.description {
-  max-width: 450px;
+.navButtons {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 2rem;
+}
+
+.introductionWrapper {
+  max-width: 45rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* Photo personnelle */
-.box-img {
-  border-radius: 50%;
-  width: 40%;
-  margin-bottom: 25px;
-  animation-name: animationperso;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease-in-out;
+.introductionWrapper p {
+  margin-bottom: 2.5rem;
 }
 
-/* BUTTONS */
-.buttons {
+.userImage {
+  border-radius: 50%;
+  width: 40%;
+  margin-bottom: 2.5rem;
+  background: #4e3ff627;
+  animation: animationperso 1.5s alternate infinite ease-in-out;
+}
+
+.contactWrapper {
+  width: 100%;
+  max-width: 45rem;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonWrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 20rem);
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 25px;
-  width: 100%;
+  grid-gap: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .button {
-  font-family: "Montserrat", sans-serif;
-  min-height: 50px;
-  min-width: 100px;
-  border-radius: 50px;
-  padding: 0px 25px;
+  min-height: 5rem;
+  padding: 0 3rem;
+  white-space: nowrap;
+  border-radius: 5rem;
   font-size: 14px;
   font-weight: 600;
   white-space: nowrap;
@@ -261,99 +155,88 @@ header {
   will-change: transform;
 }
 
-/* CV button : style */
-.CV_button {
-  background-color: rgb(187, 240, 196, 1);
-  color: black;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-/* CV button : hover */
-.CV_button:hover {
+.button:hover {
   transform: translateY(-5px);
 }
 
-/* CV button : icon */
-.icon-download {
-  margin-right: 5px;
+.resumeButton {
+  background-color: #4d3ff6;
+  color: white;
 }
 
-/* Blog button : style */
-.blog_button {
-  background-color: rgb(127, 129, 143, 0.3);
-  color: white;
-  display: none;
+.downloadIcon {
+  margin-right: 0.5rem;
 }
 
-/* Blog button : hover */
-.blog_button:hover {
-  background-color: rgb(127, 129, 143, 0.6);
-  color: white;
+.blogButton {
+  background: rgb(127 129 143 / 14%);
 }
 
 .socialWrapper {
-  margin-bottom: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-bottom: 2.5rem;
 }
 
-/* Bouton Twitter : style */
-.social {
-  border-radius: 50%;
-  width: 40px;
+.socialIcon {
+  width: 4rem;
   transition: transform 0.2s;
 }
 
-/* Bouton Twitter : hover */
 .social:hover {
   transform: rotate(-15deg);
   filter: brightness(80%);
 }
 
-/* Alignement des réseaux sociaux */
-.box li {
-  display: inline-block;
-  margin: 0% 3%;
-  list-style: none;
+.wrapperTitle {
+  margin: 0;
+  grid-column: 1/-1;
 }
 
-/* Liens vers les réseaux sociaux */
-.box li a {
-  border-radius: 50%;
-  width: 50px;
-  text-decoration: none;
-  font-size: 3px;
-  transition: all ease-in-out 250ms;
-}
-
-/* Hover des réseaux sociaux*/
-.box li a:hover {
-  color: #b9b9b9;
-}
-
-.footer {
-  display: none;
+.projectWrapper {
   width: 100%;
-  font-family: "Montserrat", sans-serif;
-  margin: auto;
-  color: white;
-  text-align: center;
-  font-size: 70%;
+  display: grid;
+  grid-gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 }
 
-.blog {
+.projectComponent {
+  height: 100%;
+  border-radius: 3rem;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  margin: center;
+  align-items: flex-start;
+  justify-content: start;
+  text-align: left;
+  /* padding: 4rem; */
 }
 
-.blog H1 {
-  color: white;
+.projectImage {
+  width: 100%;
+  object-fit: cover;
+  height: 20rem;
+  border-radius: 2rem 2rem 0 0;
+  /* margin-bottom: 1.5rem; */
 }
 
-.blog H2 {
-  color: white;
+.projectText {
+  padding: 3rem 4rem 4rem 4rem;
+}
+
+.projectTitle {
+  margin-bottom: 1rem;
+}
+
+.projectDescription {
+  margin-bottom: 1.5rem;
+}
+
+.projectStack {
+  font-size: 1.4rem;
+  color: #425466a6;
+  font-weight: 300;
 }
 
 /* ANIMATIONS */
@@ -361,9 +244,9 @@ header {
 /* Photo personnelle animation code */
 @keyframes animationperso {
   from {
-    transform: rotate(-8deg);
+    transform: rotate(-5deg);
   }
   to {
-    transform: rotate(8deg);
+    transform: rotate(5deg);
   }
 }

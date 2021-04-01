@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="style.css" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
-    <link rel="stylesheet" href="style.css" />
-    <title>Gaël David - Site personnel</title>
-    <meta name="description" content="Je m'appelle Gaël, je suis diplômé d'Audencia Business School et aujourd'hui consultant IT & Data chez Wavestone. Que vous soyez tombé sur ce site par hasard ou par envie d'en apprendre plus sur moi, entrez, vous êtes le ou la bienvenue ! " />
+    <title>Gaël David - Portfolio</title>
+    <meta name="description" content="👋 Hi, I'm Gaël, a self-taught Fullstack web developer, former Wavestone IT Consultant and Audencia Business School graduate" />
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png"/>
@@ -19,66 +18,81 @@
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175063293-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "UA-175063293-1");
-    </script>
+    <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments);}gtag("js", new Date());gtag("config", "UA-175063293-1");</script>
 
-    <!-- Google fonts -->
+    <!-- Google Fonts / Icons -->
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.css" />
   </head>
 
   <body>
     <header>
-      <a href="" class="navIcon">GAËL</a>
+      <a href="" class="navIcon">GD</a>
       <div class="navButtons">
         <a href="">Portfolio</a>
         <a href="">Resume</a>
       </div>
     </header>
-    <main class="box">
-      <div class="id">
-        <img src="img/profile.jpg" alt="Photographie Gael David" title="Memoji Gael David" class="box-img"/>
-        <h1>GAËL DAVID</h1>
-        <h5>Développeur <em>Frontend</em></h5>
-        <ul class="socialWrapper">
-          <li>
-            <a target="_blank" href="https://twitter.com/gaeldavid44">
-              <img src="img/twitter.svg" alt="Twitter Gael David" title="Twitter Gael David" class="twitter-img social"/>
-            </a>
-          </li>
-          <li>
-            <a target="_blank" href="https://www.youtube.com/user/gaelcanari">
-              <img src="img/youtube.svg" alt="Youtube Gael David" title="Youtube Gael David" class="youtube-img social"/>
-            </a>
-          </li>
-          <li>
-            <a target="_blank" href="https://www.linkedin.com/in/gaeldavid/">
-              <img src="img/linkedin.svg" alt="Linkedin Gael David" title="Linkedin Gael David" class="linkedin-img social"/>
-            </a>
-          </li>
-        </ul>
+    <main>
+      <div class="introductionWrapper">
+        <img src="img/profile.png" alt="Picture Gael David" title="Memoji Gael David" class="userImage"/>
+        <h1>Hi, I'm Gaël 👋</h1>
+        <h2>Web <em>Developer</em></h2>
+        <p>Self-taught Fullstack web developer, former Wavestone IT Consultant and Audencia Business School graduate</p>
       </div>
-      <div class="description">
-        <!-- <p>
-          Que vous soyez tombé sur cette page par hasard ou par envie d'en
-          apprendre plus sur moi, bienvenue !
-          <br />
-          <br />
-          Je suis Gaël, ex-étudiant d'Audencia Business School et aujourd'hui
-          à la recherche d'un poste de Développeur Frontend.
-        </p> -->
-        <div class="buttons">
-          <a target="_blank" class="button CV_button" href="CV.pdf"><i class="icon-download"></i> Télécharger CV</a>
-          <a target="_blank" class="button blog_button" href="blog.html">Mon Portfolio</a>
+      <div class="contactWrapper">
+        <div class="socialWrapper">
+          <a target="_blank" href="https://github.com/gael-david">
+            <img src="img/social/githubBlack.svg" alt="Github Gael David" title="Github Gael David" class="githubIcon socialIcon"/>
+          </a>
+          <a target="_blank" href="https://www.linkedin.com/in/gaeldavid/">
+            <img src="img/social/linkedinBlack.svg" alt="Linkedin Gael David" title="Linkedin Gael David" class="linkedinIcon socialIcon"/>
+          </a>
+          <a target="_blank" href="https://twitter.com/gaeldavid44">
+            <img src="img/social/twitterBlack.svg" alt="Twitter Gael David" title="Twitter Gael David" class="twitterIcon socialIcon"/>
+          </a>
         </div>
+        <div class="buttonWrapper">
+          <a target="_blank" class="button resumeButton" href="bucket/CV_G_David.pdf"><span class="material-icons-outlined downloadIcon">file_download</span>Download CV</a>
+          <a class="button blogButton" href="mailto:gaelcdavid@gmail.com"><span class="material-icons-outlined downloadIcon">email</span>Contact</a>
+        </div>
+      </div>
+      <div class="projectWrapper">
+        <h2 class="wrapperTitle">My Projects</h2>
+        <a target="_blank" href="https://melies-app.herokuapp.com/">
+          <div class="projectComponent">
+            <img src="https://images.unsplash.com/photo-1611095564350-2cbe940a8d99?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1651&q=80" class="projectImage" alt="Melies">
+            <div class="projectText">
+              <h3 class="projectTitle">Melies 🌝</h3>
+              <p class="projectDescription">A film lover app, where you can rate films and manage your watchlist according to streaming availability</p>
+              <p class="projectStack"><strong>Stack:</strong> HTML/CSS, Javascript, Node.js, Express, MongoDB, Heroku, API TMDB</p>
+            </div>
+          </div>
+        </a>
+        <a target="_blank" href="https://gael-david.github.io/reservia">
+          <div class="projectComponent">
+            <img src="https://images.unsplash.com/photo-1517059224940-d4af9eec41b7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1167&q=80" class="projectImage" alt="Melies">
+            <div class="projectText">
+              <h3 class="projectTitle">Reservia 🏖</h3>
+              <p class="projectDescription">The frontend homepage of a fictional holiday booking startup, Reservia (OpenClassrooms Project N°1)</p>
+              <p class="projectStack"><strong>Stack:</strong> HTML5/CSS3, Javascript</p>
+            </div>
+          </div>
+        </a>
+        <a target="_blank" href="https://gael-david.github.io/drums">
+          <div class="projectComponent">
+            <img src="https://images.unsplash.com/photo-1484788984921-03950022c9ef?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1104&q=80" class="projectImage" alt="Melies">
+            <div class="projectText">
+              <h3 class="projectTitle">Batterie faible 🥁</h3>
+              <p class="projectDescription">A simple and fun drum-kit single-page website, just in case you forgot your drums at home</p>
+              <p class="projectStack"><strong>Stack:</strong> HTML5/CSS3, Javascript</p>
+            </div>
+          </div>
+        </a>
       </div>
     </main>
 
