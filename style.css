@@ -314,6 +314,10 @@ main {
 }
 
 @media only screen and (max-width: 500px) {
+  .resumeNav {
+    display: none;
+  }
+
   .techWrapper {
     display: grid;
     width: 100%;
