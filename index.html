@@ -8,13 +8,10 @@
     <meta name="description" content="👋 Hi, I'm Gaël, a self-taught Fullstack web developer, former Wavestone IT Consultant and Audencia Business School graduate" />
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png"/>
-    <link rel="manifest" href="Favicon/site.webmanifest" />
-    <link rel="mask-icon" href="Favicon/safari-pinned-tab.svg" color="#5bbad5"/>
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+    <link rel="manifest" href="Favicon/site.webmanifest">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175063293-1"></script>
@@ -24,17 +21,18 @@
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
 
   </head>
 
   <body>
     <header>
-      <a href="" class="navIcon">GD</a>
+      <a href="" class="navIcon">G<em>D</em></a>
       <div class="navButtons">
-        <a href="">Portfolio</a>
-        <a href="">Resume</a>
+        <a target="_blank" href="bucket/CV_G_David.pdf">Resume</a>
+        <a href="#projects">Projects</a>
+        <a href="#technologies">Technologies</a>
       </div>
     </header>
     <main>
@@ -61,38 +59,87 @@
           <a class="button blogButton" href="mailto:gaelcdavid@gmail.com"><span class="material-icons-outlined downloadIcon">email</span>Contact</a>
         </div>
       </div>
+      <h2 id="projects" class="wrapperTitle">My latest projects</h2>
       <div class="projectWrapper">
-        <h2 class="wrapperTitle">My Projects</h2>
-        <a target="_blank" href="https://melies-app.herokuapp.com/">
-          <div class="projectComponent">
-            <img src="https://images.unsplash.com/photo-1611095564350-2cbe940a8d99?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1651&q=80" class="projectImage" alt="Melies">
+        <a class="projectComponent" target="_blank" href="https://melies-app.herokuapp.com/">
+            <img src="img/projects/meliesIphone.png" height="400" width="1000" class="projectImage" alt="Melies">
             <div class="projectText">
               <h3 class="projectTitle">Melies 🌝</h3>
-              <p class="projectDescription">A film lover app, where you can rate films and manage your watchlist according to streaming availability</p>
+              <p class="projectDescription">A film lover website, where you can rate films and manage your watchlist according to streaming platform availabilities</p>
               <p class="projectStack"><strong>Stack:</strong> HTML/CSS, Javascript, Node.js, Express, MongoDB, Heroku, API TMDB</p>
             </div>
-          </div>
         </a>
-        <a target="_blank" href="https://gael-david.github.io/reservia">
-          <div class="projectComponent">
-            <img src="https://images.unsplash.com/photo-1517059224940-d4af9eec41b7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1167&q=80" class="projectImage" alt="Melies">
+        <a class="projectComponent" target="_blank" href="https://gael-david.github.io/reservia">
+            <img src="img/projects/reserviaMac.png" height="400" width="1000" class="projectImage" alt="Reservia">
             <div class="projectText">
               <h3 class="projectTitle">Reservia 🏖</h3>
-              <p class="projectDescription">The frontend homepage of a fictional holiday booking startup, Reservia (OpenClassrooms Project N°1)</p>
+              <p class="projectDescription">The frontend homepage of a fictional holiday booking startup, Reservia - OpenClassrooms Project N°1</p>
               <p class="projectStack"><strong>Stack:</strong> HTML5/CSS3, Javascript</p>
             </div>
-          </div>
         </a>
-        <a target="_blank" href="https://gael-david.github.io/drums">
-          <div class="projectComponent">
-            <img src="https://images.unsplash.com/photo-1484788984921-03950022c9ef?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1104&q=80" class="projectImage" alt="Melies">
+        <a class="projectComponent" target="_blank" href="https://gael-david.github.io/drums">
+            <img src="img/projects/drumsPhone.png" height="500" width="700" class="projectImage" alt="Batterie faible">
             <div class="projectText">
               <h3 class="projectTitle">Batterie faible 🥁</h3>
               <p class="projectDescription">A simple and fun drum-kit single-page website, just in case you forgot your drums at home</p>
               <p class="projectStack"><strong>Stack:</strong> HTML5/CSS3, Javascript</p>
             </div>
+        </a>
+        <a class="projectComponent" target="_blank" href="">
+          <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" height="400" width="1000" class="projectImage" alt="Oh my food!">
+          <div class="projectText">
+            <h3 class="projectTitle">Oh my Food! 🍕</h3>
+            <p class="projectDescription"><strong>Work in progress:</strong> A static food delivery website, showcasing the power of CSS animations - OpenClassrooms Project N°2</p>
+            <p class="projectStack"><strong>Stack:</strong> HTML5/CSS3, Javascript</p>
           </div>
         </a>
+        <a class="projectComponent" target="_blank" href="">
+          <img src="img/projects/filmixTablet.png" height="400" width="1000" class="projectImage" alt="Melies">
+          <div class="projectText">
+            <h3 class="projectTitle">Filmix 📽</h3>
+            <p class="projectDescription">With only a few questions, this static website will help you find your next favorite film</p>
+            <p class="projectStack"><strong>Stack:</strong> HTML5/CSS3, Javascript</p>
+          </div>
+        </a>
+      </div>
+      <h2 id="technologies" class="wrapperTitle">Technologies I'm into</h2>
+      <div class="techWrapper">
+        <div class="techComponent html">
+          <img src="img/tech/html.svg" height="100" width="100" alt="HTML icon">
+        </div>
+        <div class="techComponent css">
+          <img src="img/tech/css.svg" height="100" width="100" alt="css icon">
+        </div>
+        <div class="techComponent javascript">
+          <img src="img/tech/javascript.svg" height="100" width="100" alt="javascript icon">
+        </div>
+        <div class="techComponent bootstrap">
+          <img src="img/tech/bootstrap.svg" height="100" width="100" alt="bootstrap icon">
+        </div>
+        <div class="techComponent vuejs">
+          <img src="img/tech/vuejs.svg" height="100" width="100" alt="vuejs icon">
+        </div>
+        <div class="techComponent mongodb">
+          <img src="img/tech/mongodb.svg" height="100" width="100" alt="mongodb icon">
+        </div>
+        <div class="techComponent nodejs">
+          <img src="img/tech/nodejs.svg" height="100" width="100" alt="Node.js icon">
+        </div>
+        <div class="techComponent heroku">
+          <img src="img/tech/heroku.svg" height="100" width="100" alt="heroku icon">
+        </div>
+        <div class="techComponent aws">
+          <img src="img/tech/aws.svg" height="100" width="100" alt="aws icon">
+        </div>
+        <div class="techComponent googlecloud">
+          <img src="img/tech/googlecloud.svg" height="100" width="100" alt="googlecloud icon">
+        </div>
+        <div class="techComponent github">
+          <img src="img/tech/github.svg" height="100" width="100" alt="github icon">
+        </div>
+        <div class="techComponent figma">
+          <img src="img/tech/figma.svg" height="100" width="100" alt="figma icon">
+        </div>
       </div>
     </main>
 
